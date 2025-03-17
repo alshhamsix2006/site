@@ -1,50 +1,178 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+    <html dir="rtl" lang="ar">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>بالاترو</title>
+            <link rel="stylesheet" href="style.css">
+            <link rel="stylesheet" href="style/phone.css">
+            <link rel="stylesheet" href="style/scroller.css">
+            <link rel="stylesheet" href="style/card.css">
+            <link rel="stylesheet" href="style/shake.css">
+            <link rel="apple-touch-icon-precomposed" sizes="57x57" href="favicomatic/apple-touch-icon-57x57.png" />
+            <link rel="apple-touch-icon-precomposed" sizes="114x114" href="favicomatic/apple-touch-icon-114x114.png" />
+            <link rel="apple-touch-icon-precomposed" sizes="72x72" href="favicomatic/apple-touch-icon-72x72.png" />
+            <link rel="apple-touch-icon-precomposed" sizes="144x144" href="favicomatic/apple-touch-icon-144x144.png" />
+            <link rel="apple-touch-icon-precomposed" sizes="60x60" href="favicomatic/apple-touch-icon-60x60.png" />
+            <link rel="apple-touch-icon-precomposed" sizes="120x120" href="favicomatic/apple-touch-icon-120x120.png" />
+            <link rel="apple-touch-icon-precomposed" sizes="76x76" href="favicomatic/apple-touch-icon-76x76.png" />
+            <link rel="apple-touch-icon-precomposed" sizes="152x152" href="favicomatic/apple-touch-icon-152x152.png" />
+            <link rel="icon" type="image/png" href="favicomatic/favicon-196x196.png" sizes="196x196" />
+            <link rel="icon" type="image/png" href="favicomatic/favicon-96x96.png" sizes="96x96" />
+            <link rel="icon" type="image/png" href="favicomatic/favicon-32x32.png" sizes="32x32" />
+            <link rel="icon" type="image/png" href="favicomatic/favicon-16x16.png" sizes="16x16" />
+            <link rel="icon" type="image/png" href="favicomatic/favicon-128.png" sizes="128x128" />
+            <meta name="application-name" content="&nbsp;"/>
+            <meta name="msapplication-TileColor" content="#FFFFFF" />
+            <meta name="msapplication-TileImage" content="favicomatic/mstile-144x144.png" />
+            <meta name="msapplication-square70x70logo" content="favicomatic/mstile-70x70.png" />
+            <meta name="msapplication-square150x150logo" content="favicomatic/mstile-150x150.png" />
+            <meta name="msapplication-wide310x150logo" content="favicomatic/mstile-310x150.png" />
+            <meta name="msapplication-square310x310logo" content="favicomatic/mstile-310x310.png" />
+            
+        </head>
+    <body>
+      <div class="flex">
+        <!-- Button for music control -->
+        <button class="music-btn" id="musicButton">
+            <img src="button/0.png" alt="Play" id="musicIcon">
+        </button>
+        <img src="logo/logo.png" class="logo">
+    </div>
+    
+    <!-- Audio Player -->
+    <audio id="audioPlayer" src="sound/music.ogg" preload="auto" loop></audio>
+          
 
-    <header>
-        <h1>Welcome to My Website</h1>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+            <h1 class="center_text">بالاترو</h1>
+            <p class="center_text">Balatro is a poker-inspired roguelike deck builder all about<br>
+                creating powerful synergies and winning big.<br>
+                <br>
+                Combine valid poker hands with unique Joker cards in order to create varied<br>
+                synergies and builds. Earn enough chips to beat devious blinds, all while<br>
+                uncovering hidden bonus hands and decks as you progress. You’re going to<br>
+                need every edge you can get in order to reach the boss blind, beat the final<br>
+                ante and secure victory.<br>
+                <br>
+                Deftly deploy an array of potent tools: different Decks, Jokers, T arot cards,<br>
+                Planet cards, Spectral cards, and Vouchers. Use these versatile instruments<br>
+                to ignite a combo frenzy and turbocharge your poker hands, crafting<br>
+                electrifying, adrenaline-fueled synergies.<br></p>
+            <hr>   <br> 
+            <li>150 Jokers, each with their own unique abilities</li><br>
+            <li>15 Decks with distinct modifiers to choose from for each run</li><br>
+            <li>5 potential variants of each Joker which add further abilities</li><br>
+            <li>22 T arot cards variants that can enhance your regular playing cards</li><br>
+            <li>12 Planet cards that help level up your possible poker hands</li><br>
+            <li>18 Spectral card</li><br>
+            <li>4 Seals</li><br>
+            <li>32 Voucher cards to help provide permanent buffs for your current run</li></ul>
+            <ul class="right">
 
-    <main>
-        <section id="home">
-            <h2>Home</h2>
-            <p>This is the home section of my website.</p>
-        </section>
+              <div class="image-container-wrapper">
+                <!-- First Row: 5 images -->
+                <div class="image-container">
+                    <button id="B_icon1" class="image-button" onclick="toggleImage(1)">
+                        <img class="Card" src="cards/cover.webp" id="button-image1">
+                    </button>
+                    <div class="image-text" id="text1">?????</div>
+                </div>
+            
+                <div class="image-container">
+                    <button id="B_icon2" class="image-button" onclick="toggleImage(2)">
+                        <img class="Card" src="cards/cover.webp" id="button-image2">
+                    </button>
+                    <div class="image-text" id="text2">?????</div>
+                </div>
+            
+                <div class="image-container">
+                    <button id="B_icon3" class="image-button" onclick="toggleImage(3)">
+                        <img class="Card" src="cards/cover.webp" id="button-image3">
+                    </button>
+                    <div class="image-text" id="text3">?????</div>
+                </div>
+            
+                <div class="image-container">
+                    <button id="B_icon4" class="image-button" onclick="toggleImage(4)">
+                        <img class="Card" src="cards/cover.webp" id="button-image4">
+                    </button>
+                    <div class="image-text" id="text4">?????</div>
+                </div>
+            
+                <div class="image-container">
+                    <button id="B_icon5" class="image-button" onclick="toggleImage(5)">
+                        <img class="Card" src="cards/cover.webp" id="button-image5">
+                    </button>
+                    <div class="image-text" id="text5">?????</div>
+                </div>
+            
+                <!-- Second Row: 5 images -->
+                <div class="image-container">
+                    <button id="B_icon6" class="image-button" onclick="toggleImage(6)">
+                        <img class="Card" src="cards/cover.webp" id="button-image6">
+                    </button>
+                    <div class="image-text" id="text6">?????</div>
+                </div>
+            
+                <div class="image-container">
+                    <button id="B_icon7" class="image-button" onclick="toggleImage(7)">
+                        <img class="Card" src="cards/cover.webp" id="button-image7">
+                    </button>
+                    <div class="image-text" id="text7">?????</div>
+                </div>
+            
+                <div class="image-container">
+                    <button id="B_icon8" class="image-button" onclick="toggleImage(8)">
+                        <img class="Card" src="cards/cover.webp" id="button-image8">
+                    </button>
+                    <div class="image-text" id="text8">?????</div>
+                </div>
+            
+                <div class="image-container">
+                    <button id="B_icon9" class="image-button" onclick="toggleImage(9)">
+                        <img class="Card" src="cards/cover.webp" id="button-image9">
+                    </button>
+                    <div class="image-text" id="text9">?????</div>
+                </div>
+            
+                <div class="image-container">
+                    <button id="B_icon10" class="image-button" onclick="toggleImage(10)">
+                        <img class="Card" src="cards/cover.webp" id="button-image10">
+                    </button>
+                    <div class="image-text" id="text10">?????</div>
+                </div>
+            </div>
+                   
+        <!-- Image Slider Section -->
 
-        <section id="about">
-            <h2>About Us</h2>
-            <p>Here you can learn more about our website and its purpose.</p>
-        </section>
-
-        <section id="services">
-            <h2>Our Services</h2>
-            <p>We offer various services to help you achieve your goals.</p>
-        </section>
-
-        <section id="contact">
-            <h2>Contact Us</h2>
-            <p>If you have any questions, feel free to reach out to us!</p>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2025 My Website. All rights reserved.</p>
-    </footer>
-
+        <div dir="ltr" class="scroller" data-direction="right" data-speed="fast">
+            <div class="scroller__inner">
+              <img width="640" height="360" src="img/img1.webp" alt="" class="s_img"/>
+              <img width="640" height="360" src="img/img2.webp" alt="" class="s_img"/>
+              <img width="640" height="360" src="img/img3.webp" alt="" class="s_img"/>
+              <img width="640" height="360" src="img/img4.webp" alt="" class="s_img"/>
+              <img width="640" height="360" src="img/img5.webp" alt="" class="s_img"/>
+            </div>
+          <div dir="ltr" class="scroller" data-direction="left" data-speed="fast">
+            <div class="scroller__inner">
+              <img width="640" height="360" src="img/img6.webp" alt="" class="s_img"/>
+              <img width="640" height="360" src="img/img7.webp" alt="" class="s_img"/>
+              <img width="640" height="360" src="img/img8.webp" alt="" class="s_img"/>
+              <img width="640" height="360" src="img/img9.webp" alt="" class="s_img"/>
+              <img width="640" height="360" src="img/img10.webp" alt="" class="s_img"/>
+            </div>
+          </div>
+            <a href="file.zip" download>Download File</a>
+            <img src="logo/Publisher_Playstack_logo.png" class="icon">
+            <h1 class="center_text">About Playstack</h1>
+            <p class="center_text">Playstack is dedicated to fostering the next wave of game development talent,<br>
+                supporting developers in creating innovative and captivating games. With a<br>
+                commitment to collaboration with creative teams, Playstack has become a key<br>
+                player in the gaming industry, recognized for its diverse game portfolio and<br>
+                effective marketing and publishing strategies. Learn more about their<br>
+                pioneering efforts at www.Playstack.com.</p>
+    <script src="script/shake&change.js"></script>
+    <script src="script/scroller.js"></script>
+    <script src="script/audio.js"></script>
 </body>
 </html>
